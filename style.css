@@ -14,22 +14,44 @@
     margin: 0;
     padding: 0;
     font-family: 'Raleway',sans-serif;
-    color:white;
+    
 }
-
-body{
-    background-color: #101820;
-}
-
 /*------------------------------------------------------------------------------*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #FEE715;
+}
 .container {
     margin: 30px auto auto auto;
     width: 65%; 
     /*border: 3px solid #FEE715;*/
     padding: 10px;
+    color:inherit;
 }
 .blankspace {
     height: 220px;
+}
+.first-color-section{
+    margin:0 0 0 -10px;
+    padding:0;
+    background-color: #101820;
+    color:white;
+}
+.second-color-section{
+    margin:0;
+    padding:0;
+    background-color: #FEE715;
+    color:#101820;
+}
+.first-to-second-transition{
+    background-color: inherit;
+}
+.first-to-second-transition hr{
+    border: 5px solid #101820;
+    margin:10px 0px 0px 0px;
+  
 }
 /*------------------------------------------------------------------------------*/
 .navbar ul {
@@ -37,7 +59,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #101820;
+    background-color: transparent;
     top: 0;
   }
   .navbar li {
@@ -50,6 +72,7 @@ body{
     text-decoration: none;
     font-family: 'Poppins',sans-serif;
     transition: color .6s ease-out;
+    color:inherit;
   }
   .navbar li a:hover {
     color:#FEE715;
@@ -96,11 +119,11 @@ body{
     padding: 0;
     width: 80px;
     height: 120px;
-    background-color: transparent !important;
+    background-color: transparent;
   }  
 .contacts li a {
     display: block;
-    color: #000;
+    color:inherit;
     padding: 8px 16px;
     text-decoration: none;
   }
@@ -125,7 +148,8 @@ body{
 .advance a{
     font-size: 16px;
     text-decoration: none;
-    transition: all .6s ease-out;
+    transition: all .3s ease-out;
+    color:inherit;
 }
 .advance:hover a{
     font-size:18px;
@@ -156,4 +180,30 @@ body{
     display:block;
     animation-name: surge;
     animation-duration: .6s; 
+}
+/*------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+@media screen and (max-width:600px){
+    .navbar{
+        font-size: 12px;
+    }
+    .salutation{
+        text-align: center;
+        text-indent: 0px;
+    }
+    .presentation{
+        text-align: center;
+        font-size: 18px;
+        text-indent: 15px;
+    }
+    .presentation b{
+        font-size:24px;
+    }
+    .role{
+        font-size:14px;
+    }
+    .contacts{
+        top:150px;
+    }
 }

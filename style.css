@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@keyframes disappear{
+    from{color:white;}
+    to{color:#101820;}
+}
+@keyframes surge{
+    from{color:#101820;}
+    to{color:white;}
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway',sans-serif;
+    color:white;
+}
+
+body{
+    background-color: #101820;
+}
+
+/*------------------------------------------------------------------------------*/
+.container {
+    margin: 30px auto auto auto;
+    width: 65%; 
+    /*border: 3px solid #FEE715;*/
+    padding: 10px;
+}
+.blankspace {
+    height: 220px;
+}
+/*------------------------------------------------------------------------------*/
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #101820;
+    top: 0;
+  }
+  .navbar li {
+    float: right;
+  }
+  .navbar li a {
+    display: block;
+    text-align: center;
+    padding: 20px 24px;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    transition: color .6s ease-out;
+  }
+  .navbar li a:hover {
+    color:#FEE715;
+  }
+/*------------------------------------------------------------------------------*/
+.header {
+    font-family: 'Lato',sans-serif;
+    text-align: left;
+    text-indent: 25px;
+}
+
+.salutation {
+    font-family: 'Caveat',sans-serif;
+    font-size: 48px;
+}
+
+.presentation {
+    font-family:inherit;
+    font-size: 24px;
+}
+.presentation b{
+    font-size:48px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.role{
+    font-family: inherit;
+    font-size:24px;
+}
+/*------------------------------------------------------------------------------*/
+.about-me{
+    padding: 10px;
+    width: 85%;
+    text-indent: 0;
+}
+/*------------------------------------------------------------------------------*/
+.contacts{
+    position: absolute;
+    right:0;
+}
+.contacts ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 120px;
+    background-color: transparent !important;
+  }  
+.contacts li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+.contacts li i{
+    font-size:32px;
+    transition: all .6s ease-out;
+}
+.contacts li i:hover {
+    color: #FEE715;
+    transform: scale(1.5);
+  }
+/*------------------------------------------------------------------------------*/
+.advnc{
+    display:grid;
+    place-items:center;
+}
+.advance{
+    width: fit-content;
+    text-align: center;
+    border-radius: 15px;
+}
+.advance a{
+    font-size: 16px;
+    text-decoration: none;
+    transition: all .6s ease-out;
+}
+.advance:hover a{
+    font-size:18px;
+}
+.advance .bx-down-arrow-alt{
+    display: none;
+    animation-name:disappear;
+    animation-duration:.6s;
+}
+.advance:hover .bx-chevron-down{
+    display: none;
+    animation-name: disappear;
+    animation-duration: .6s;
+
+}
+.advance:hover .bx-down-arrow-alt{
+    display: block;
+    transform: scale(1.5);
+    animation-name:surge;
+    animation-duration: .6s;
+}
+.advance:not(:hover) .bx-down-arrow-alt{
+    display:none;
+    animation-name: disappear;
+    animation-duration: .6s;
+}
+.advance:not(:hover) .bx-chevron-down{
+    display:block;
+    animation-name: surge;
+    animation-duration: .6s; 
+}

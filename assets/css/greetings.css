@@ -2,7 +2,7 @@
     from{color:white;}
     to{color:#101820;}
 }
-@keyframes surge{
+@keyframes appear{
     from{color:#101820;}
     to{color:white;}
 }
@@ -14,6 +14,7 @@
     }
     .salutation {
         font-family: 'Caveat',sans-serif;
+        color:#FEE715;
         font-size: 48px;
     }
     .presentation {
@@ -42,7 +43,7 @@
 .contacts{
     position: absolute;
     right:0;
-    top:220px;
+    top:35vh;
     }
     .contacts ul {
         list-style-type: none;
@@ -67,72 +68,71 @@
             transform: scale(1.5);
         }
 /*------------------------------------------------------------------------------*/
-.advnc{
-    display:grid;
-    place-items:center;
-    }
-    .advance{
-        width: fit-content;
-        text-align: center;
-        border-radius: 15px;
-    }
-        .advance a{
-            font-size: 16px;
-            text-decoration: none;
-            transition: all .3s ease-out;
-            color:inherit;
+        .go-to{
+            display:grid;
+            place-items:center;
+            }  
+        .go-to-projects{
+            width: fit-content;
+            text-align: center;
+            border-radius: 15px;
+            position: absolute;
+            bottom:7vh;
         }
-            .advance:hover a{
-                font-size:18px;
+            .go-to-projects a{
+                font-size: 16px;
+                text-decoration: none;
+                transition: all .3s ease-out;
+                color:inherit;
             }
-    .advance .bx-down-arrow-alt{
-        display: none;
-        animation-name:disappear;
-        animation-duration:.6s;
-    }
-        .advance:hover .bx-down-arrow-alt{
-            display: block;
-            transform: scale(1.5);
-            animation-name:surge;
-            animation-duration: .6s;
+                .go-to-projects:hover a{
+                    font-size:18px;
+                }
+        .go-to-projects .bx-down-arrow-alt{
+            display: none;
+            animation-name:disappear;
+            animation-duration:.6s;
         }
-        .advance:not(:hover) .bx-down-arrow-alt{
-            display:none;
+            .go-to-projects:hover .bx-down-arrow-alt{
+                display: block;
+                transform: scale(1.5);
+                animation-name:appear;
+                animation-duration: .6s;
+            }
+            .go-to-projects:not(:hover) .bx-down-arrow-alt{
+                display:none;
+                animation-name: disappear;
+                animation-duration: .6s;
+            }
+        .go-to-projects:hover .bx-chevron-down{
+            display: none;
             animation-name: disappear;
             animation-duration: .6s;
         }
-    .advance:hover .bx-chevron-down{
-        display: none;
-        animation-name: disappear;
-        animation-duration: .6s;
-    }
-    .advance:not(:hover) .bx-chevron-down{
-        display:block;
-        animation-name: surge;
-        animation-duration: .6s; 
-    }
-
+        .go-to-projects:not(:hover) .bx-chevron-down{
+            display:block;
+            animation-name: appear;
+            animation-duration: .6s; 
+        }
+     
 /*------------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------------*/
 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     .salutation{
-        text-align: center;
-        text-indent: 0px;
+        text-align: left;
+        font-size:1.5em;
     }
-        .presentation{
-            text-align: center;
-            font-size: 18px;
-            text-indent: 15px;
+    .presentation{
+        text-align: left;
+        font-size:.5em;
+    }
+        .presentation b{
+            font-size:2.5em;
         }
-            .presentation b{
-                font-size:24px;
-            }
-        .role{
-            font-size:14px;
-        }
-        .contacts{
-            top:150px;
-        }
+    .role{
+        font-size: .5em;
+    }
+    
 }

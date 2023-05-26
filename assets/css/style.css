@@ -6,9 +6,17 @@
     from{color:white;}
     to{color:#101820;}
 }
-@keyframes surge{
+@keyframes alternative-disappear{
+    from{color:#101820;}
+    to{color:#FEE715};
+}
+@keyframes appear{
     from{color:#101820;}
     to{color:white;}
+}
+@keyframes alternative-appear{
+    from{color:#FEE715;}
+    to{color:#101820;}
 }
 *{
     margin: 0;
@@ -22,6 +30,10 @@ html{
 body{
     background-color: #FEE715;
 }
+#Top{
+    height:95vh;
+}
+
 .first-color-section{
     margin:0;
     padding:0;
@@ -40,7 +52,13 @@ body{
 .first-to-second-transition hr{
     border: 5px solid #101820;
     margin:10px 0px 0px 0px;
-  
+}
+.second-to-first-transition{
+    background-color: inherit;
+}
+.second-to-first-transition hr{
+    border:5px solid #101820;
+    margin: 10px 0 0 0;
 }
 .container {
     margin: 30px auto auto auto;
@@ -49,8 +67,19 @@ body{
     padding: 10px;
     color:inherit;
 }
-.blankspace {
-    height: 150px;
-}
 
-/*@media screen and (max-width:600px){}*/
+.go-to{
+    margin: 25px 0 -15px 0;
+    display:grid;
+    place-items:center;
+    }   
+    
+/*------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+
+@media screen and (max-width:700px){
+    .go-to{
+        bottom:60px;
+    }
+}

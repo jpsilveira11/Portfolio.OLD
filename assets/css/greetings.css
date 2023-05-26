@@ -1,0 +1,138 @@
+@keyframes disappear{
+    from{color:white;}
+    to{color:#101820;}
+}
+@keyframes surge{
+    from{color:#101820;}
+    to{color:white;}
+}
+/*------------------------------------------------------------------------------*/
+.header {
+    font-family: 'Lato',sans-serif;
+    text-align: left;
+    text-indent: 25px;
+    }
+    .salutation {
+        font-family: 'Caveat',sans-serif;
+        font-size: 48px;
+    }
+    .presentation {
+        font-family:inherit;
+        font-size: 24px;
+    }
+        .presentation b{
+            font-size:48px;
+            font-family: 'Poppins',sans-serif;
+        }
+    .role{
+        font-family: inherit;
+        font-size:24px;
+    }
+    .about-me{
+        padding: 10px;
+        width: 85%;
+        text-indent: 0;
+    }
+    .mobile{
+        font-family: inherit;
+        font-size:16px;
+        text-indent: 15px;
+    }
+/*------------------------------------------------------------------------------*/
+.contacts{
+    position: absolute;
+    right:0;
+    top:220px;
+    }
+    .contacts ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 80px;
+        height: 120px;
+        background-color: transparent;
+    }  
+    .contacts li a {
+        display: block;
+        color:inherit;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    .contacts li i{
+        font-size:32px;
+        transition: all .6s ease-out;
+    }
+        .contacts li i:hover {
+            color: #FEE715;
+            transform: scale(1.5);
+        }
+/*------------------------------------------------------------------------------*/
+.advnc{
+    display:grid;
+    place-items:center;
+    }
+    .advance{
+        width: fit-content;
+        text-align: center;
+        border-radius: 15px;
+    }
+        .advance a{
+            font-size: 16px;
+            text-decoration: none;
+            transition: all .3s ease-out;
+            color:inherit;
+        }
+            .advance:hover a{
+                font-size:18px;
+            }
+    .advance .bx-down-arrow-alt{
+        display: none;
+        animation-name:disappear;
+        animation-duration:.6s;
+    }
+        .advance:hover .bx-down-arrow-alt{
+            display: block;
+            transform: scale(1.5);
+            animation-name:surge;
+            animation-duration: .6s;
+        }
+        .advance:not(:hover) .bx-down-arrow-alt{
+            display:none;
+            animation-name: disappear;
+            animation-duration: .6s;
+        }
+    .advance:hover .bx-chevron-down{
+        display: none;
+        animation-name: disappear;
+        animation-duration: .6s;
+    }
+    .advance:not(:hover) .bx-chevron-down{
+        display:block;
+        animation-name: surge;
+        animation-duration: .6s; 
+    }
+
+/*------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+
+@media screen and (max-width:600px){
+    .salutation{
+        text-align: center;
+        text-indent: 0px;
+    }
+        .presentation{
+            text-align: center;
+            font-size: 18px;
+            text-indent: 15px;
+        }
+            .presentation b{
+                font-size:24px;
+            }
+        .role{
+            font-size:14px;
+        }
+        .contacts{
+            top:150px;
+        }
+}

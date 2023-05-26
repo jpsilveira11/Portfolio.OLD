@@ -1,0 +1,32 @@
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    top: 0;
+  }
+.navbar li {
+  float: right;
+}
+  .navbar li a {
+    display: block;
+    text-align: center;
+    padding: 20px 24px;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    transition: color .6s ease-out;
+    color:inherit;
+  }
+  .navbar li a:hover {
+    color:#FEE715;
+  }
+/*------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+
+@media screen and (max-width:600px){
+    .navbar{
+        font-size: 12px;
+    }
+}

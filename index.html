@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/navbar.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/greetings.css">
@@ -24,21 +24,33 @@
     </nav>
     <div class="container">
         <div class="header">
+            <div class="animation-corridor">
             <div class="salutation">
                 Greetings!
             </div>
             <div class="presentation">
-            I'm <b>João Pedro<br> Espechit Silveira</b>
+            My name is <b>João Pedro<br> Espechit Silveira</b>
             </div>
-            <div class="role">
-                Student and Python Programmer
-            </div>
+            <div class="wrapper">
+                <div class="i-am">
+                    I'm a
+                </div>
+                <div class="roles">
+                    <ul>
+                        <li><span>Student</span></li>
+                        <li><span>Programmer</span></li>
+                        <!--<li><span>Next role</span></li>-->
+                    </ul>
+                </div>
+            </div>    
             <div class="about-me">
         Hey, what's up?<br>I'm a 23 year old computer science student looking for my very first professional opportunities after my first internship experience.
             </div>  
-            <!--<div class="mobile">
-                Fun fact: this is a responsive page! Go ahead and try it on your mobile!
-            </div>-->
+            <div class="mobile">
+                <p>Fun fact: this is a responsive page! Go ahead and try it on your mobile!</p>
+                <p>Responsive! Isn't it awesome?</p>
+            </div>
+        </div>
         </div>
         <div class="contacts">
             <ul>
@@ -87,12 +99,12 @@
     <hr>
     <br><br>
 </div>
-<div class="second-color-section" id="Projects">
-        <div class="container">
+<div class="second-color-section">
+        <div class="container" id="Projects">
             <div class="projects">
                 <div class="card-background">
                     <div class="card">
-                        <div class="content">
+                        <div class="card-content">
                             <h2>1</h2>
                             <h3>Project 1</h3>
                             <p>
@@ -104,9 +116,9 @@
                 </div>
                 <div class="card-background">
                     <div class="card">
-                        <div class="content">
+                        <div class="card-content">
                             <!--<h2>2</h2>-->
-                            <h3>Coming Soon!</h3>
+                            <h3>Coming Soon</h3>
                             <p>
                                 Improvements and cool stuff incoming!
                             </p>
@@ -116,9 +128,9 @@
                 </div>
                 <div class="card-background">
                     <div class="card">
-                        <div class="content">
+                        <div class="card-content">
                             <!--<h2>3</h2>-->
-                            <h3>Coming Soon!</h3>
+                            <h3>Coming Soon</h3>
                             <p>
                                 Improvements and cool stuff incoming!
                             </p>
@@ -128,9 +140,9 @@
                 </div>
                 <div class="card-background">
                     <div class="card">
-                        <div class="content">
+                        <div class="card-content">
                             <!--<h2>4</h2>-->
-                            <h3>Coming Soon!</h3>
+                            <h3>Coming Soon</h3>
                             <p>
                             Improvements and cool stuff incoming!
                             </p>
@@ -144,31 +156,33 @@
                 <h2>Why don't you check these smaller projects?</h2>
             </div>
             <div class="small-projects">
-                <div class="box">
-                    <div class="box-face">
-                        <div class="box-content">
-                            a
+                <div class="screen-background">
+                    <div class="screen">
+                        <div class="screen-content">
+                            <h3>Small Project A</h3>
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adispising elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <a href="#">Check it out!</a>
                         </div>
-                    </div>
-                    <div class="box-label">
-                        Mini Project 1
                     </div>
                 </div>
-                <div class="box">
-                    <div class="box-face">
-                        <div class="box-content">
-                            b
+                <div class="screen-background">
+                    <div class="screen">
+                        <div class="screen-content">
+                            <h3>Coming Soon</h3>
+                            <p>
+                                Improvements and cool stuff incoming!
+                            </p>
+                            <!--<a href="#">Check it out!</a>-->
                         </div>
-                    </div>
-                    <div class="box-label">
-                        Mini Project 2
                     </div>
                 </div>
             </div>
             <div class="go-to">
                 <div class="go-to-skills">
                     <a href="#Skills">
-                        Come check my current skillset!<br>
+                        Now, come check my current skillset!<br>
                         <i class='bx bx-chevron-down'></i>
                         <i class='bx bx-down-arrow-alt'></i>
                     </a>

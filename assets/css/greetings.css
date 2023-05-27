@@ -1,43 +1,95 @@
-@keyframes disappear{
-    from{color:white;}
-    to{color:#101820;}
-}
-@keyframes appear{
-    from{color:#101820;}
-    to{color:white;}
-}
+  @keyframes blink {
+    from { border-color:transparent; }
+    to { border-color: white; }
+  }
 /*------------------------------------------------------------------------------*/
 .header {
-    font-family: 'Lato',sans-serif;
     text-align: left;
     text-indent: 25px;
     }
-    .salutation {
-        font-family: 'Caveat',sans-serif;
-        color:#FEE715;
-        font-size: 48px;
+    .animation-corridor{
+        display: inline-block;
+        font-family: 'Lato',sans-serif;
+        overflow: hidden;
+        animation-fill-mode: forwards;
     }
-    .presentation {
-        font-family:inherit;
-        font-size: 24px;
-    }
+        .salutation{
+            font-family: 'Caveat',sans-serif;
+            color:#FEE715;
+            font-size: 48px;
+            animation: slide-up 1s ease-in-out;
+        }
+        
+        .presentation {
+            font-family:inherit;
+            font-size: 24px;
+            opacity: 0;
+            animation: slide-up 1s ease-in-out forwards; 
+            animation-delay: 1s;
+        }
         .presentation b{
             font-size:48px;
             font-family: 'Poppins',sans-serif;
         }
-    .role{
-        font-family: inherit;
-        font-size:24px;
-    }
-    .about-me{
-        padding: 10px;
-        width: 85%;
-        text-indent: 0;
-    }
-    .mobile{
-        font-family: inherit;
+        .wrapper{
+            display:flex;
+            opacity:0;
+            animation: slide-up 1s ease-in-out forwards; 
+            animation-delay: 2s;
+        }
+            .wrapper .i-am{
+                font-family: 'Lato',sans-serif;
+                font-size: 18px;
+            }
+            .wrapper .roles{
+                margin-left:-15px;
+                height: 25px;
+                line-height: 25px;
+                overflow: hidden;
+            }
+                .roles li{
+                    list-style: none;
+                    font-size: 20px;
+                    color:#FEE715;
+                    position:relative;
+                    top:0;
+                    animation:slide 3s steps(2) infinite;
+                }
+                    .roles li span{
+                        position:relative;
+                    }
+                        .roles li span::after{
+                            content:"";
+                            position:absolute;
+                            left:0;
+                            width: 100%;
+                            height: 100%;
+                            background:#101820;
+                            border-left: 1px solid #FEE715;
+                            animation:typing 1.5s steps(15,end) infinite;
+                        }
+
+        .about-me{
+            padding: 10px;
+            width: 85%;
+            text-indent: 0;
+            opacity: 0;
+            animation: slide-left 1s ease-in-out forwards; 
+            animation-delay: 3s;
+        }
+    .mobile p{
+        font-family: 'Lato',sans-serif;
         font-size:16px;
         text-indent: 15px;
+        opacity: 0;
+        animation: slide-left 1s ease-in-out forwards; 
+        animation-delay: 4s;
+    }
+    .mobile p:nth-child(1){
+        display: block;
+    }   
+    .mobile p:nth-child(2){
+        display: none;
     }
 /*------------------------------------------------------------------------------*/
 .contacts{
@@ -119,20 +171,25 @@
 
 /*------------------------------------------------------------------------------*/
 
-@media screen and (max-width:700px){
+@media screen and (max-width:600px){
     .salutation{
         text-align: left;
-        font-size:1.5em;
+        font-size:24px;
     }
     .presentation{
         text-align: left;
-        font-size:.5em;
+        font-size:12px;
     }
         .presentation b{
-            font-size:2.5em;
+            display:block;
+            font-size:24px;
+            text-indent:0;
         }
-    .role{
-        font-size: .5em;
+    .mobile p:nth-child(1){
+        display: none;
+    }   
+    .mobile p:nth-child(2){
+        display: block;
     }
-    
 }
+/*------------------------------------------------------------------------------*/

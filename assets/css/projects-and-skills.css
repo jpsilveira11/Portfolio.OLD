@@ -163,9 +163,7 @@
             animation-duration: .6s; 
         }
  /*------------------------------------------------------------------------------*/
-#Skills{
-    color:#FEE715;
-}
+
     .skill-background:nth-child(1){
         background:url("../img/html/logo-200-black.png") no-repeat center;
     }

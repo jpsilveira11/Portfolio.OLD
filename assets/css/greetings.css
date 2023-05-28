@@ -1,8 +1,3 @@
-  @keyframes blink {
-    from { border-color:transparent; }
-    to { border-color: white; }
-  }
-/*------------------------------------------------------------------------------*/
 .header {
     text-align: left;
     text-indent: 25px;
@@ -193,3 +188,11 @@
     }
 }
 /*------------------------------------------------------------------------------*/
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    .about-me{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+}

@@ -46,11 +46,15 @@
     40%,60%{left:calc(100% + 3px);}
     100%{left:0;}
   }
+@keyframes fade{
+    from{opacity:.4;}
+    to{opacity:1;}
+}
 *{
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
     font-family: 'Raleway',sans-serif;
-    
 }
 html{
     scroll-behavior: smooth;
@@ -98,12 +102,79 @@ body{
     
 }
 
+/*------------------------------------------------------------------------------*/
+
 .go-to{
-    margin: 25px 0 -15px 0;
-    display:grid;
-    place-items:center;
+    margin: 25px auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    .go-to-btn{
+        width: fit-content;
+        text-align: center;    
     }   
-    
+    /*.go-to .go-to-btn:nth-child(1){
+        
+    }*/
+        .go-to-btn a{
+            font-size: 16px;
+            text-decoration: none;
+            transition: all .3s ease-out;
+            color:inherit;
+        }
+            .go-to-btn:hover a{
+                font-size:18px;
+            }
+    .go-to-btn .bx-down-arrow-alt{
+        display: none;
+    }
+        .go-to-btn .bx-down-arrow-alt:nth-child(odd){
+            animation-name:disappear .6s;
+        }
+        .go-to-btn .bx-down-arrow-alt:nth-child(even){
+            animation-name:alternative-disappear .6s;
+        }
+    .go-to-btn:hover .bx-down-arrow-alt{
+        display: block;
+        transform: scale(1.5);
+    }
+        .go-to-btn:hover .bx-down-arrow-alt:nth-child(odd){
+            animation-name:appear .6s;
+        }
+        .go-to-btn:hover .bx-down-arrow-alt:nth-child(even){
+            animation-name:alternative-appear .6s;
+        }
+    .go-to-btn:not(:hover) .bx-down-arrow-alt{
+        display:none;
+    }
+        .go-to-btn:not(:hover) .bx-down-arrow-alt:nth-child(odd){
+            animation-name: disappear .6s;
+        }
+        .go-to-btn:not(:hover) .bx-down-arrow-alt:nth-child(even){
+            animation-name: alternative-disappear .6s;
+        }
+    .go-to-btn:hover .bx-chevron-down{
+        display: none;
+    }
+        .go-to-btn:hover .bx-chevron-down:nth-child(odd){
+            animation-name: disappear .6s;
+        }
+        .go-to-btn:hover .bx-chevron-down:nth-child(even){
+            animation-name: alternative-disappear .6s;
+        }
+    .go-to-btn:not(:hover) .bx-chevron-down{
+        display:block;
+    }
+        .go-to-btn:not(:hover) .bx-chevron-down:nth-child(odd){
+            animation-name: appear .6s;
+        }
+        .go-to-btn:not(:hover) .bx-chevron-down:nth-child(even){
+            animation-name: appear .6s;
+        }
+ 
+
 /*------------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------------*/

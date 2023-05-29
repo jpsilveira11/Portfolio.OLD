@@ -115,54 +115,6 @@
             transform: scale(1.5);
         }
 /*------------------------------------------------------------------------------*/
-        .go-to{
-            display:grid;
-            place-items:center;
-            }  
-        .go-to-projects{
-            width: fit-content;
-            text-align: center;
-            border-radius: 15px;
-            position: absolute;
-            bottom:7vh;
-        }
-            .go-to-projects a{
-                font-size: 16px;
-                text-decoration: none;
-                transition: all .3s ease-out;
-                color:inherit;
-            }
-                .go-to-projects:hover a{
-                    font-size:18px;
-                }
-        .go-to-projects .bx-down-arrow-alt{
-            display: none;
-            animation-name:disappear;
-            animation-duration:.6s;
-        }
-            .go-to-projects:hover .bx-down-arrow-alt{
-                display: block;
-                transform: scale(1.5);
-                animation-name:appear;
-                animation-duration: .6s;
-            }
-            .go-to-projects:not(:hover) .bx-down-arrow-alt{
-                display:none;
-                animation-name: disappear;
-                animation-duration: .6s;
-            }
-        .go-to-projects:hover .bx-chevron-down{
-            display: none;
-            animation-name: disappear;
-            animation-duration: .6s;
-        }
-        .go-to-projects:not(:hover) .bx-chevron-down{
-            display:block;
-            animation-name: appear;
-            animation-duration: .6s; 
-        }
-     
-/*------------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------------*/
 

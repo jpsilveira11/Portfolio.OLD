@@ -191,9 +191,8 @@
     .card-background{
         margin:15px;
     }
-        .content h2{
-            top:-5px;
-            font-size: 3.5em;
+        .card-content h2{
+            top:-10vh;
         }
         .content h3{
             font-family: "Poppins",sans-serif;

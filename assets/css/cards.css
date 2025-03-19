@@ -86,12 +86,24 @@
                     color:#FEE715;
                 }
 
-    .card-background:nth-child(1){
+    /*.card-background:nth-child(1){
         background:url("../img/projects/Hacker-News-Snapshot.png") no-repeat center;
         background-size:cover;
-        color:white;
+        color:white;*/
         
+        .screen-background:nth-child(1){
+            background:url("../img/projects/Hacker-News-Snapshot.png") no-repeat center;
+            background-size:cover;
+            color:white;
     }
+        .screen-background:nth-child(1) h3{
+            color:white;
+    }
+        .screen-background:nth-child(1) p{
+            font-size: .7em;
+    }
+
+
 /*------------------------------------------------------------------------------*/
         .prj-transition{
             margin:20px 0 20px 0;
@@ -155,12 +167,15 @@
         background:url("../img/css/logo-200-black.png") no-repeat center;
     }
     .skill-background:nth-child(3){
-        background:url("../img/python/logo-200-black.png") no-repeat center;
+        background:url("../img/js/logo-200-black.png") no-repeat center;
     }
     .skill-background:nth-child(4){
-        background:url("../img/flask/logo-200-black.png") no-repeat center;
+        background:url("../img/python/logo-200-black.png") no-repeat center;
     }
     .skill-background:nth-child(5){
+        background:url("../img/flask/logo-200-black.png") no-repeat center;
+    }
+    .skill-background:nth-child(6){
         background:url("../img/git/logo-200-black.png") no-repeat center;
     }
 /*------------------------------------------------------------------------------*/
@@ -176,7 +191,10 @@
         background:url("../img/tdi/logo-200-white.png") no-repeat center;
     }
     .certification-background:nth-child(2){
-        background:url("../img/cederj/logo-200-white.png") no-repeat center;
+        background:url("../img/cisco/logo-200-white.png") no-repeat center;
+    }
+    .certification-background:nth-child(3){
+        background:url("../img/cisco/logo-200-white.png") no-repeat center;
     }
 
 

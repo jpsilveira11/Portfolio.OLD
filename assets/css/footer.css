@@ -28,7 +28,7 @@
     font-size:32px;
     transition: all .6s ease-out;
 }.footer-contacts li i:hover {
-    color: #FEE715;
+    color: var(--hover--icon-color);
     transform: scale(1.5);
 }
 /*------------------------------------------------------------------------------*/

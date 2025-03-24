@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta names="keywords" content="Python, developer, HTML, CSS">
+    <meta names="keywords" content="Python, developer, HTML, CSS, Cybersecurity, Javascript, Flask, Django, Github, Git">
     <meta name="author" content="João Pedro Espechit Silveira">
+    <link id="favicon" rel="icon" href="/assets/img/favicon/jp-logo-dark-theme.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/assets/css/themes.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/navbar.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/greetings.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/cards.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/certifications.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/footer.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/assets/scripts/theme.js" defer></script>
           
     <title>My humble Portfolio</title>
 </head>
@@ -24,7 +26,7 @@
 <div class="first-color-section" id="Top">
     <nav class="navbar">
         <ul>
-            <!--<li>Btn-theme-change</li>-->
+            <li><a><i id="themeChanger" class="bx bxs-moon"></i></a></li>
             <li><a href="#Certifications">Certifications</a></li>
             <li><a href="#Skills">Skills</a></li>
             <li><a href="#Projects">Projects</a></li>
@@ -63,7 +65,7 @@
         <div class="contacts">
             <ul>
                 <li>
-                    <a href="https://www.linkedin.com/in/joão-pedro-espechit-silveira-7ba882208/" target="_blank">
+                    <a href="https://www.linkedin.com/in/jpsilveira11/" target="_blank">
                     <i class='bx bxl-linkedin-square'></i>
                     </a>
                 </li>
@@ -260,9 +262,11 @@
             <div class="skill-background">
                 <div class="skill">
                     <div class="skill-description">
-                        <h3>Flask</h3>
+                        <h3><!--Flask-->Django</h3>
                         <p>
-                        A lightweight web application framework written in Python that provides a simple and flexible way to develop web applications. 
+                            A powerful web application framework made with Python.<br>
+                            Widely famed applications and services, such as Spotify and Instagram were build with this tool! 
+                        <!--A lightweight web application framework written in Python that provides a simple and flexible way to develop web applications.--> 
                         </p>
                     </div>
                 </div>
@@ -283,7 +287,7 @@
         </div>
         <div class="go-to">
             <div class="go-to-btn">
-                <a href="#Certifications">
+                <a href="#Certifications" id="go-to-2">
                    My certifications!<br>
                     <i class='bx bx-chevron-down'></i>
                     <i class='bx bx-down-arrow-alt'></i>

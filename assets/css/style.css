@@ -3,20 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @keyframes disappear{
-    from{color:white;}
-    to{color:#101820;}
+    from{color:var(--text-color);}
+    to{color:var(--primary-bg-color);}
 }
 @keyframes alternative-disappear{
-    from{color:#101820;}
-    to{color:#FEE715};
+    from{color:var(--primary-bg-color);}
+    to{color:var(--title-color);};
 }
 @keyframes appear{
-    from{color:#101820;}
-    to{color:white;}
+    from{color:var(--primary-bg-color);}
+    to{color:var(--text-color);}
 }
 @keyframes alternative-appear{
-    from{color:#FEE715;}
-    to{color:#101820;}
+    from{color:var(--title-color);}
+    to{color:var(--alternative-text-color);}
 }
 @keyframes slide-up{
     from{   
@@ -60,7 +60,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #FEE715;
+    background-color: var(--secondary-bg-color);
 }
 #Top{
     height:95vh;
@@ -69,27 +69,27 @@ body{
 .first-color-section{
     margin:0;
     padding:0;
-    background-color: #101820;
-    color:white;
+    background-color: var(--primary-bg-color);
+    color:var(--text-color);
 }
 .second-color-section{
     margin:0;
     padding:0;
-    background-color: #FEE715;
-    color:#101820;
+    background-color: var(--secondary-bg-color);
+    color:var(--alternative-text-color);
 }
 .first-to-second-transition{
     background-color: inherit;
 }
 .first-to-second-transition hr{
-    border: 5px solid #101820;
+    border: 5px solid var(--primary-bg-color);
     margin:10px 0px 0px 0px;
 }
 .second-to-first-transition{
     background-color: inherit;
 }
 .second-to-first-transition hr{
-    border:5px solid #101820;
+    border:5px solid var(--primary-bg-color);
     margin: 10px 0 0 0;
 }
 .container {

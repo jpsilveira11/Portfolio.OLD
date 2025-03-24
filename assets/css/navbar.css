@@ -19,7 +19,7 @@
     color:inherit;
   }
   .navbar li a:hover {
-    color:#FEE715;
+    color:var(--hover--icon-color);
   }
 /*------------------------------------------------------------------------------*/
 

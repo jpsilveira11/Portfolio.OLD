@@ -10,7 +10,7 @@
     }
         .salutation{
             font-family: 'Caveat',sans-serif;
-            color:#FEE715;
+            color:var(--title-color);
             font-size: 48px;
             animation: slide-up 1s ease-in-out;
         }
@@ -45,7 +45,7 @@
                 .roles li{
                     list-style: none;
                     font-size: 20px;
-                    color:#FEE715;
+                    color:var(--title-color);
                     position:relative;
                     top:0;
                     animation:slide 3s steps(2) infinite;
@@ -59,8 +59,8 @@
                             left:0;
                             width: 100%;
                             height: 100%;
-                            background:#101820;
-                            border-left: 1px solid #FEE715;
+                            background:var(--primary-bg-color);
+                            border-left: 1px solid var(--secondary-bg-color);
                             animation:typing 1.5s steps(15,end) infinite;
                         }
 
@@ -111,11 +111,13 @@
         transition: all .6s ease-out;
     }
         .contacts li i:hover {
-            color: #FEE715;
+            color: var(--hover--icon-color);
             transform: scale(1.5);
         }
 /*------------------------------------------------------------------------------*/
-
+#go-to-1 a{
+    color:var(--anchors);
+}
 /*------------------------------------------------------------------------------*/
 
 @media screen and (max-width:600px){

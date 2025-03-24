@@ -74,61 +74,46 @@
                 display:inline-block;
                 padding: 8px 20px;
                 margin-top:15px;
-                background: white;
-                color:#101820;
+                background: var(--button-bg);
+                color:var(--button-text-color);
                 border-radius: 20px;
                 text-decoration: none;
                 box-shadow:0 5px 15px rgba(0,0,0,.5);
                 transition: .2s ease-out;
             }
                 .card-content a:hover,.screen-content a:hover,.certification-text a:hover{
-                    background:#101820;
-                    color:#FEE715;
+                    background:var(--hover--button-bg);
+                    color:var(--hover--button-text-color);
                 }
-
-    /*.card-background:nth-child(1){
+        
+    .screen-background .screen .screen-content h3,.screen-background .screen .screen-content p{
+        color:var(--card-text-color);
+    }
+    .screen-background .screen .screen-content p{
+        font-size: .7em;
+    }
+    .screen-background:nth-child(1){
         background:url("../img/projects/Hacker-News-Snapshot.png") no-repeat center;
         background-size:cover;
-        color:white;*/
         
-        .screen-background:nth-child(1){
-            background:url("../img/projects/Hacker-News-Snapshot.png") no-repeat center;
-            background-size:cover;
-            color:white;
-    }
-        .screen-background:nth-child(1) h3{
-            color:white;
-    }
-        .screen-background:nth-child(1) p{
-            font-size: .7em;
     }
     .screen-background:nth-child(2){
         background:url("../img/projects/Emoji-Memory-Game-Snapshot.png") no-repeat center;
         background-size:cover;
-        color:white;
+        
     }
-    .screen-background:nth-child(2) h3{
-        color:white;
-}
-    .screen-background:nth-child(2) p{
-        font-size: .7em;
-}
     .screen-background:nth-child(3){
         background:url("../img/projects/Flappy-Bird-Snapshot.png") no-repeat center;
         background-size:cover;
-        color:white;
+        
     }
-    .screen-background:nth-child(3) h3{
-        color:white;
-}
-    .screen-background:nth-child(3) p{
-        font-size: .7em;
-}
-
-
 /*------------------------------------------------------------------------------*/
         .prj-transition{
             margin:20px 0 20px 0;
+            color: var(--anchors);
+        }
+        #go-to-2{
+            color: var(--anchors);
         }
 /*------------------------------------------------------------------------------*/
 .screen-background{
@@ -142,7 +127,6 @@
             font-family: "Poppins",sans-serif;
             font-size:1.8em;
             margin-top: 25px;
-            color:#101820;
             font-weight: bolder;
             /*text-align: center;*/
             text-indent: 15px;
@@ -182,6 +166,11 @@
         }
  /*------------------------------------------------------------------------------*/
 
+
+    .skill-background .skill .skill-description h3, .skill-background .skill .skill-description p{
+        color:var(--card-text-alt-color);
+    }
+
     .skill-background:nth-child(1){
         background:url("../img/html/logo-200-black.png") no-repeat center;
     }
@@ -195,7 +184,7 @@
         background:url("../img/python/logo-200-black.png") no-repeat center;
     }
     .skill-background:nth-child(5){
-        background:url("../img/flask/logo-200-black.png") no-repeat center;
+        background:url("../img/django/logo-200-black.png") no-repeat center;
     }
     .skill-background:nth-child(6){
         background:url("../img/git/logo-200-black.png") no-repeat center;

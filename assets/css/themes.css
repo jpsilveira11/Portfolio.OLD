@@ -18,6 +18,8 @@
     --hover--button-text-color:#FEE715;
 
     --anchors:#ffffff;
+    --dark-snippets:#000000;
+    --light-snippets:#ffffff;
     
     --icon-color:#ffffff;
     --hover--icon-color:#FEE715;
@@ -42,6 +44,8 @@
     --hover--button-text-color:#ffffff;
     
     --anchors:#317773;
+    --dark-snippets:#ffffff;
+    --light-snippets:#317773;
 
     --icon-color: #000000;
     --hover--icon-color:#317773;

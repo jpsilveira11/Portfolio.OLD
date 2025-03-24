@@ -110,7 +110,12 @@
 /*------------------------------------------------------------------------------*/
         .prj-transition{
             margin:20px 0 20px 0;
-            color: var(--anchors);
+        }
+        #first-snippet{
+            color: var(--dark-snippets);
+        }
+        #second-snippet{
+            color: var(--light-snippets);
         }
         #go-to-2{
             color: var(--anchors);

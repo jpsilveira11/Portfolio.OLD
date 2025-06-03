@@ -11,7 +11,7 @@ This is the repo of my first portfolio! 🎉
 [![Stacks](https://skillicons.dev/icons?i=html,css,javascript)](https://skillicons.dev)
 
 <p align="center">
-  <img src="./assets/img/ThemeColor.gif">
+  <img src="./assets/img/ColorTheme.gif">
 </p>
 
 ## Contact

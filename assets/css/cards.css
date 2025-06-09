@@ -85,10 +85,14 @@
                     background:var(--hover--button-bg);
                     color:var(--hover--button-text-color);
                 }
-            /*.card-background:nth-child(1){
+            .card-background:nth-child(1){
+                background:url("../img/projects/Reactify.png") no-repeat center;
+                background-size:cover;
+            }
+            .card-background:nth-child(2){
                 background:url("../img/projects/Mentorify.png") no-repeat center;
                 background-size:cover;
-            }*/
+            }
         
     .screen-background .screen .screen-content h3,.screen-background .screen .screen-content p{
         color:var(--card-text-color);

@@ -8,7 +8,7 @@ This is the repo of my first portfolio! 🎉
 
 ## Technologies
 ### This page uses <br>
-[![Stacks](https://skillicons.dev/icons?i=html,css,javascript)](https://skillicons.dev)
+[![Stacks](https://skillicons.dev/icons?i=html,css,javascript,netlify)](https://skillicons.dev)
 
 <p align="center">
   <img src="./assets/img/ColorTheme.gif">

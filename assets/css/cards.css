@@ -93,6 +93,10 @@
                 background:url("../img/projects/Mentorify.png") no-repeat center;
                 background-size:cover;
             }
+            .card-background:nth-child(3){
+                background:url("../img/projects/a_django_portfolio.png") no-repeat center;
+                background-size:cover;
+            }
         
     .screen-background .screen .screen-content h3,.screen-background .screen .screen-content p{
         color:var(--card-text-color);
